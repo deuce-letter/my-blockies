@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "lint",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "${workspaceFolder}/.vscode/yarn.sh",
+        "lint"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "dev",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "${workspaceFolder}/.vscode/yarn.sh",
+        "dev"
+      ],
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "preview",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "${workspaceFolder}/.vscode/yarn.sh",
+        "preview"
+      ],
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "${workspaceFolder}/.vscode/yarn.sh",
+        "build"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
